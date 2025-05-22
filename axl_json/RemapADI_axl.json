@@ -1,0 +1,146 @@
+{
+"Name": "RemapADI",
+"Type": "service",
+"Interface": ["IRemap"],
+"Options": [
+{
+    "Name": "threshold",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "1.e-10",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/threshold",
+    "Id": "(option=threshold,service=RemapADI)"
+ }
+,
+{
+    "Name": "is-euler-scheme",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "true",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/is-euler-scheme",
+    "Id": "(option=is-euler-scheme,service=RemapADI)"
+ }
+,
+{
+    "Name": "ordre-projection",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "2",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/ordre-projection",
+    "Id": "(option=ordre-projection,service=RemapADI)"
+ }
+,
+{
+    "Name": "conservation-energie-totale",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/conservation-energie-totale",
+    "Id": "(option=conservation-energie-totale,service=RemapADI)"
+ }
+,
+{
+    "Name": "projection-pente-borne-mixte",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/projection-pente-borne-mixte",
+    "Id": "(option=projection-pente-borne-mixte,service=RemapADI)"
+ }
+,
+{
+    "Name": "projection-limiteur-id",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/projection-limiteur-id",
+    "Id": "(option=projection-limiteur-id,service=RemapADI)"
+ }
+,
+{
+    "Name": "projection-limiteur-pure-id",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/projection-limiteur-pure-id",
+    "Id": "(option=projection-limiteur-pure-id,service=RemapADI)"
+ }
+,
+{
+    "Name": "projection-pente-borne",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/projection-pente-borne",
+    "Id": "(option=projection-pente-borne,service=RemapADI)"
+ }
+,
+{
+    "Name": "projection-pente-borne-debar-fix",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/projection-pente-borne-debar-fix",
+    "Id": "(option=projection-pente-borne-debar-fix,service=RemapADI)"
+ }
+,
+{
+    "Name": "calcul_flux_masse",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapadi/calcul_flux_masse",
+    "Id": "(option=calcul_flux_masse,service=RemapADI)"
+ }
+]
+}

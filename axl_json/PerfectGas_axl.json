@@ -1,0 +1,34 @@
+{
+"Name": "PerfectGas",
+"Type": "service",
+"Interface": ["::Eos::IEquationOfState"],
+"Options": [
+{
+    "Name": "adiabatic-cst",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "1.4",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "perfectgas/adiabatic-cst",
+    "Id": "(option=adiabatic-cst,service=PerfectGas)"
+ }
+,
+{
+    "Name": "limit-tension",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "0.0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": true,
+    "FullName": "perfectgas/limit-tension",
+    "Id": "(option=limit-tension,service=PerfectGas)"
+ }
+]
+}

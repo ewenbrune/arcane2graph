@@ -1,0 +1,906 @@
+{
+"Name": "Mahyco",
+"Type": "module",
+"Interface": [],
+"Options": [
+{
+    "Name": "material",
+    "Type": "Material",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": true,
+    "MinOccurs": 1,
+    "HasMaxOccursAttribute": true,
+    "MaxOccurs": -1,
+    "IsOptional": false,
+    "FullName": "mahyco/material",
+    "Id": "(option=material,module=Mahyco)",
+    "Options": [
+        {
+            "Name": "name",
+            "Type": "string",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/material/name",
+            "Id": "(option=name,module=Mahyco)"
+         }
+        ]
+ }
+,
+{
+    "Name": "environment",
+    "Type": "Environment",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": true,
+    "MinOccurs": 1,
+    "HasMaxOccursAttribute": true,
+    "MaxOccurs": -1,
+    "IsOptional": false,
+    "FullName": "mahyco/environment",
+    "Id": "(option=environment,module=Mahyco)",
+    "Options": [
+        {
+            "Name": "name",
+            "Type": "string",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/name",
+            "Id": "(option=name,module=Mahyco)"
+         }
+,
+        {
+            "Name": "material",
+            "Type": "string",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": true,
+            "MinOccurs": 1,
+            "HasMaxOccursAttribute": true,
+            "MaxOccurs": -1,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/material",
+            "Id": "(option=material,module=Mahyco)"
+         }
+,
+        {
+            "Name": "densite-initiale",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/densite-initiale",
+            "Id": "(option=densite-initiale,module=Mahyco)"
+         }
+,
+        {
+            "Name": "pression-initiale",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "1.e5",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/pression-initiale",
+            "Id": "(option=pression-initiale,module=Mahyco)"
+         }
+,
+        {
+            "Name": "energie-initiale",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/energie-initiale",
+            "Id": "(option=energie-initiale,module=Mahyco)"
+         }
+,
+        {
+            "Name": "temperature-initiale",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/temperature-initiale",
+            "Id": "(option=temperature-initiale,module=Mahyco)"
+         }
+,
+        {
+            "Name": "vitesse-initiale",
+            "Type": "real3",
+            "HasDefault": true,
+            "DefaultValue": "0. 0. 0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/vitesse-initiale",
+            "Id": "(option=vitesse-initiale,module=Mahyco)"
+         }
+,
+        {
+            "Name": "initialisation-utilisateur",
+            "Type": "bool",
+            "HasDefault": true,
+            "DefaultValue": "false",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/initialisation-utilisateur",
+            "Id": "(option=initialisation-utilisateur,module=Mahyco)"
+         }
+,
+        {
+            "Name": "eos-model",
+            "Type": "IEquationOfState",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/eos-model",
+            "Id": "(option=eos-model,module=Mahyco)"
+         }
+,
+        {
+            "Name": "elasto-model",
+            "Type": "IElasto",
+            "HasDefault": true,
+            "DefaultValue": "NoModel",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/elasto-model",
+            "Id": "(option=elasto-model,module=Mahyco)"
+         }
+,
+        {
+            "Name": "linear-pseudo-coeff",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.5",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/linear-pseudo-coeff",
+            "Id": "(option=linear-pseudo-coeff,module=Mahyco)"
+         }
+,
+        {
+            "Name": "quadratic-pseudo-coeff",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "1.2",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/quadratic-pseudo-coeff",
+            "Id": "(option=quadratic-pseudo-coeff,module=Mahyco)"
+         }
+,
+        {
+            "Name": "energy-depot",
+            "Type": "TypeEnergyDepot",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": true,
+            "MinOccurs": 0,
+            "HasMaxOccursAttribute": true,
+            "MaxOccurs": 1,
+            "IsOptional": false,
+            "FullName": "mahyco/environment/energy-depot",
+            "Id": "(option=energy-depot,module=Mahyco)",
+            "Options": [
+                {
+                    "Name": "type",
+                    "Type": "TypesMahyco::eEnergyDepot",
+                    "HasDefault": false,
+                    "DefaultValue": null,
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/type",
+                    "Id": "(option=type,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "valeur-source-energie",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/valeur-source-energie",
+                    "Id": "(option=valeur-source-energie,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "origine",
+                    "Type": "real3",
+                    "HasDefault": true,
+                    "DefaultValue": "0. 0. 0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/origine",
+                    "Id": "(option=origine,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "dependanceX",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/dependancex",
+                    "Id": "(option=dependanceX,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "dependanceY",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/dependancey",
+                    "Id": "(option=dependanceY,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "dependanceZ",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/dependancez",
+                    "Id": "(option=dependanceZ,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "cutoffX",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "1000.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/cutoffx",
+                    "Id": "(option=cutoffX,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "cutoffY",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "1000.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/cutoffy",
+                    "Id": "(option=cutoffY,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "cutoffZ",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "1000.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/cutoffz",
+                    "Id": "(option=cutoffZ,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "dependanceT",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/dependancet",
+                    "Id": "(option=dependanceT,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "power",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "4.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/power",
+                    "Id": "(option=power,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "Tdebut",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "0.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/tdebut",
+                    "Id": "(option=Tdebut,module=Mahyco)"
+                 }
+,
+                {
+                    "Name": "Tfin",
+                    "Type": "real",
+                    "HasDefault": true,
+                    "DefaultValue": "1000.",
+                    "HasMinOccursAttribute": false,
+                    "MinOccurs": null,
+                    "HasMaxOccursAttribute": false,
+                    "MaxOccurs": null,
+                    "IsOptional": false,
+                    "FullName": "mahyco/environment/energy-depot/tfin",
+                    "Id": "(option=Tfin,module=Mahyco)"
+                 }
+                ]
+         }
+        ]
+ }
+,
+{
+    "Name": "cas-model",
+    "Type": "IInitialisations",
+    "HasDefault": true,
+    "DefaultValue": "EXTERNAL",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/cas-model",
+    "Id": "(option=cas-model,module=Mahyco)"
+ }
+,
+{
+    "Name": "remap",
+    "Type": "IRemap",
+    "HasDefault": true,
+    "DefaultValue": "RemapADI",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/remap",
+    "Id": "(option=remap,module=Mahyco)"
+ }
+,
+{
+    "Name": "schema-csts",
+    "Type": "bool",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/schema-csts",
+    "Id": "(option=schema-csts,module=Mahyco)"
+ }
+,
+{
+    "Name": "pseudo-centree",
+    "Type": "bool",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/pseudo-centree",
+    "Id": "(option=pseudo-centree,module=Mahyco)"
+ }
+,
+{
+    "Name": "coef-antiderive",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "0.",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/coef-antiderive",
+    "Id": "(option=coef-antiderive,module=Mahyco)"
+ }
+,
+{
+    "Name": "longueur-caracteristique",
+    "Type": "string",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/longueur-caracteristique",
+    "Id": "(option=longueur-caracteristique,module=Mahyco)"
+ }
+,
+{
+    "Name": "deltat-constant",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/deltat-constant",
+    "Id": "(option=deltat-constant,module=Mahyco)"
+ }
+,
+{
+    "Name": "deltat-min",
+    "Type": "real",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/deltat-min",
+    "Id": "(option=deltat-min,module=Mahyco)"
+ }
+,
+{
+    "Name": "deltat-max",
+    "Type": "real",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/deltat-max",
+    "Id": "(option=deltat-max,module=Mahyco)"
+ }
+,
+{
+    "Name": "deltat-init",
+    "Type": "real",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/deltat-init",
+    "Id": "(option=deltat-init,module=Mahyco)"
+ }
+,
+{
+    "Name": "final-time",
+    "Type": "real",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/final-time",
+    "Id": "(option=final-time,module=Mahyco)"
+ }
+,
+{
+    "Name": "cfl",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "0.3",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/cfl",
+    "Id": "(option=cfl,module=Mahyco)"
+ }
+,
+{
+    "Name": "calcul-vitson-max",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "true",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/calcul-vitson-max",
+    "Id": "(option=calcul-vitson-max,module=Mahyco)"
+ }
+,
+{
+    "Name": "threshold",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "1.e-10",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/threshold",
+    "Id": "(option=threshold,module=Mahyco)"
+ }
+,
+{
+    "Name": "gravity",
+    "Type": "real3",
+    "HasDefault": true,
+    "DefaultValue": "0. 0. 0.",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/gravity",
+    "Id": "(option=gravity,module=Mahyco)"
+ }
+,
+{
+    "Name": "sans-lagrange",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/sans-lagrange",
+    "Id": "(option=sans-lagrange,module=Mahyco)"
+ }
+,
+{
+    "Name": "with-newton",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/with-newton",
+    "Id": "(option=with-newton,module=Mahyco)"
+ }
+,
+{
+    "Name": "with-projection",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "true",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/with-projection",
+    "Id": "(option=with-projection,module=Mahyco)"
+ }
+,
+{
+    "Name": "pression-explicite",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/pression-explicite",
+    "Id": "(option=pression-explicite,module=Mahyco)"
+ }
+,
+{
+    "Name": "boundary-condition",
+    "Type": "BoundaryCondition",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": true,
+    "MinOccurs": 0,
+    "HasMaxOccursAttribute": true,
+    "MaxOccurs": -1,
+    "IsOptional": false,
+    "FullName": "mahyco/boundary-condition",
+    "Id": "(option=boundary-condition,module=Mahyco)",
+    "Options": [
+        {
+            "Name": "type",
+            "Type": "TypesMahyco::eBoundaryCondition",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/type",
+            "Id": "(option=type,module=Mahyco)"
+         }
+,
+        {
+            "Name": "surface",
+            "Type": "string",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/surface",
+            "Id": "(option=surface,module=Mahyco)"
+         }
+,
+        {
+            "Name": "value",
+            "Type": "real",
+            "HasDefault": false,
+            "DefaultValue": null,
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/value",
+            "Id": "(option=value,module=Mahyco)"
+         }
+,
+        {
+            "Name": "dependanceX",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/dependancex",
+            "Id": "(option=dependanceX,module=Mahyco)"
+         }
+,
+        {
+            "Name": "dependanceY",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/dependancey",
+            "Id": "(option=dependanceY,module=Mahyco)"
+         }
+,
+        {
+            "Name": "dependanceZ",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/dependancez",
+            "Id": "(option=dependanceZ,module=Mahyco)"
+         }
+,
+        {
+            "Name": "cutoffX",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "1000.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/cutoffx",
+            "Id": "(option=cutoffX,module=Mahyco)"
+         }
+,
+        {
+            "Name": "cutoffY",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "1000.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/cutoffy",
+            "Id": "(option=cutoffY,module=Mahyco)"
+         }
+,
+        {
+            "Name": "cutoffZ",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "1000.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/cutoffz",
+            "Id": "(option=cutoffZ,module=Mahyco)"
+         }
+,
+        {
+            "Name": "dependanceT",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/dependancet",
+            "Id": "(option=dependanceT,module=Mahyco)"
+         }
+,
+        {
+            "Name": "power",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "4.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/power",
+            "Id": "(option=power,module=Mahyco)"
+         }
+,
+        {
+            "Name": "Tdebut",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "0.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/tdebut",
+            "Id": "(option=Tdebut,module=Mahyco)"
+         }
+,
+        {
+            "Name": "Tfin",
+            "Type": "real",
+            "HasDefault": true,
+            "DefaultValue": "1000.",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/tfin",
+            "Id": "(option=Tfin,module=Mahyco)"
+         }
+,
+        {
+            "Name": "fichier",
+            "Type": "string",
+            "HasDefault": true,
+            "DefaultValue": "RIEN",
+            "HasMinOccursAttribute": false,
+            "MinOccurs": null,
+            "HasMaxOccursAttribute": false,
+            "MaxOccurs": null,
+            "IsOptional": false,
+            "FullName": "mahyco/boundary-condition/fichier",
+            "Id": "(option=fichier,module=Mahyco)"
+         }
+        ]
+ }
+,
+{
+    "Name": "geometry",
+    "Type": "Arcane::Numerics::IGeometryMng",
+    "HasDefault": true,
+    "DefaultValue": "Euclidian3Geometry",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "mahyco/geometry",
+    "Id": "(option=geometry,module=Mahyco)"
+ }
+]
+}

@@ -1,0 +1,48 @@
+{
+"Name": "Sod",
+"Type": "service",
+"Interface": ["::Cas_test::IInitialisations"],
+"Options": [
+{
+    "Name": "cas-test",
+    "Type": "::Cas_test::Test",
+    "HasDefault": false,
+    "DefaultValue": null,
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "sod/cas-test",
+    "Id": "(option=cas-test,service=Sod)"
+ }
+,
+{
+    "Name": "reverse-option",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": true,
+    "FullName": "sod/reverse-option",
+    "Id": "(option=reverse-option,service=Sod)"
+ }
+,
+{
+    "Name": "parameter",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "0.",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "sod/parameter",
+    "Id": "(option=parameter,service=Sod)"
+ }
+]
+}

@@ -1,0 +1,188 @@
+{
+"Name": "RemapALE",
+"Type": "service",
+"Interface": ["IRemap"],
+"Options": [
+{
+    "Name": "threshold",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "1.e-10",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/threshold",
+    "Id": "(option=threshold,service=RemapALE)"
+ }
+,
+{
+    "Name": "volum-criteria",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "1.",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/volum-criteria",
+    "Id": "(option=volum-criteria,service=RemapALE)"
+ }
+,
+{
+    "Name": "angle-criteria",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "-1.",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/angle-criteria",
+    "Id": "(option=angle-criteria,service=RemapALE)"
+ }
+,
+{
+    "Name": "nb-iteration-winslow",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "3",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/nb-iteration-winslow",
+    "Id": "(option=nb-iteration-winslow,service=RemapALE)"
+ }
+,
+{
+    "Name": "is-euler-scheme",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/is-euler-scheme",
+    "Id": "(option=is-euler-scheme,service=RemapALE)"
+ }
+,
+{
+    "Name": "ordre-projection",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "2",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/ordre-projection",
+    "Id": "(option=ordre-projection,service=RemapALE)"
+ }
+,
+{
+    "Name": "conservation-energie-totale",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/conservation-energie-totale",
+    "Id": "(option=conservation-energie-totale,service=RemapALE)"
+ }
+,
+{
+    "Name": "projection-pente-borne-mixte",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/projection-pente-borne-mixte",
+    "Id": "(option=projection-pente-borne-mixte,service=RemapALE)"
+ }
+,
+{
+    "Name": "projection-limiteur-id",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/projection-limiteur-id",
+    "Id": "(option=projection-limiteur-id,service=RemapALE)"
+ }
+,
+{
+    "Name": "projection-limiteur-pure-id",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/projection-limiteur-pure-id",
+    "Id": "(option=projection-limiteur-pure-id,service=RemapALE)"
+ }
+,
+{
+    "Name": "projection-pente-borne",
+    "Type": "bool",
+    "HasDefault": true,
+    "DefaultValue": "false",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/projection-pente-borne",
+    "Id": "(option=projection-pente-borne,service=RemapALE)"
+ }
+,
+{
+    "Name": "projection-pente-borne-debar-fix",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/projection-pente-borne-debar-fix",
+    "Id": "(option=projection-pente-borne-debar-fix,service=RemapALE)"
+ }
+,
+{
+    "Name": "projection_dual",
+    "Type": "integer",
+    "HasDefault": true,
+    "DefaultValue": "0",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "remapale/projection_dual",
+    "Id": "(option=projection_dual,service=RemapALE)"
+ }
+]
+}

@@ -1,0 +1,34 @@
+{
+"Name": "StiffenedGas",
+"Type": "service",
+"Interface": ["::Eos::IEquationOfState"],
+"Options": [
+{
+    "Name": "adiabatic-cst",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "1.4",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": false,
+    "FullName": "stiffenedgas/adiabatic-cst",
+    "Id": "(option=adiabatic-cst,service=StiffenedGas)"
+ }
+,
+{
+    "Name": "tension-limit-cst",
+    "Type": "real",
+    "HasDefault": true,
+    "DefaultValue": "0.01",
+    "HasMinOccursAttribute": false,
+    "MinOccurs": null,
+    "HasMaxOccursAttribute": false,
+    "MaxOccurs": null,
+    "IsOptional": true,
+    "FullName": "stiffenedgas/tension-limit-cst",
+    "Id": "(option=tension-limit-cst,service=StiffenedGas)"
+ }
+]
+}
