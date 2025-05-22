@@ -4,6 +4,8 @@
 ```
 -A,export_format=xml,export_output_directory=[path],export_only=true
 ```
+!!! export_only sert à tuer le processus avant le lancement de la simultation en provoquant une erreur, il faut l'ignorer.
+
 
 ## Convertir les configs .xml extraitent via arcane en .json
 ```
