@@ -17,8 +17,6 @@ python converToJson.py
 axl2ccT4 -l json -o \[output_path\] \[path_to_axl\]/Mahyco.axl
 ```
 
-Lancer ```merge.py``` en premier puis ```export_axl.py```
-
 ## Déploiement docker
 ```
 docker run \
@@ -33,6 +31,10 @@ docker run \
     -e NEO4J_AUTH=neo4j/password \
     neo4j:5.26
 ```
+
+## Remplir la BDD
+
+Lancer ```merge.py``` en premier puis ```export_axl.py```
 
 ## Interface web
 ```
