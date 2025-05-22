@@ -7,7 +7,7 @@
 !!! export_only sert à tuer le processus avant le lancement de la simultation en provoquant une erreur, l'erreur est donc normale.
 
 
-## Convertir les configs .xml extraitent via arcane en .json
+## Convertir les configs .xml extraites via arcane en .json
 ```
 python converToJson.py
 ```
