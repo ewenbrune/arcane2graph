@@ -1,5 +1,10 @@
 # arcane2graph
 
+## Executer arcane en sequentiel avec les options suivantes
+```
+-A,export_format=xml,export_output_directory=[path],export_only=true
+```
+
 ## Convertir les configs .xml extraitent via arcane en .json
 ```
 python converToJson.py
