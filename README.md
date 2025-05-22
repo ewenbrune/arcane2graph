@@ -1,6 +1,8 @@
 # arcane2graph
 
-## Déploiement docker
+Lancer ```merge.py``` en premier puis ```export_axl.py```
+
+## Déploiement docker
 ```
 docker run \
     -d \
@@ -15,7 +17,7 @@ docker run \
     neo4j:5.26
 ```
 
-## Interface web
+## Interface web
 ```
 http://localhost:7474/browser/
 ```
