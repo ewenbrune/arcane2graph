@@ -11,7 +11,7 @@ python converToJson.py
 ```
 
 ## convertir les .axl en .json
-axl2ccT4 -l json -o \[output_path\] \[path_to_axl\]/Mahyco.axl
+```axl2ccT4 -l json -o \[output_path\] \[path_to_axl\]/Mahyco.axl```
 
 Lancer ```merge.py``` en premier puis ```export_axl.py```
 
