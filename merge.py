@@ -51,7 +51,7 @@ def split_json(data, parent_uid=None, parent_label=None, rel_type=None, path="")
     relationships = []
 
     node_uid = generate_uid()
-    node_label = path.split("/")[-1].lower() or "root"
+    node_label = path.split("TestCase/case/")[-1].lower() or path.split("/case/")[-1].lower() or "TestCase"
 
     props = {}
     if isinstance(data, dict):
@@ -111,7 +111,7 @@ for filename in os.listdir(json_path):
             try:
                 data = json.load(f)
                 if isinstance(data, dict):
-                    nodes, relationships = split_json(data, path="/case")
+                    nodes, relationships = split_json(data, path="TestCase")
                     all_nodes.extend(nodes)
                     all_relationships.extend(relationships)
             except Exception as e:

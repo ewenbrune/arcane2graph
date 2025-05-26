@@ -427,7 +427,7 @@
  }
 ,
 {
-    "Name": "remap",
+    "Name": "remap-service",
     "Type": "IRemap",
     "HasDefault": true,
     "DefaultValue": "RemapADI",
@@ -436,8 +436,8 @@
     "HasMaxOccursAttribute": false,
     "MaxOccurs": null,
     "IsOptional": false,
-    "FullName": "mahyco/remap",
-    "Id": "(option=remap,module=Mahyco)"
+    "FullName": "mahyco/remap-service",
+    "Id": "(option=remap-service,module=Mahyco)"
  }
 ,
 {
