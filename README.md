@@ -4,16 +4,18 @@
 ```
 -A,export_format=xml,export_output_directory=[path],export_only=true
 ```
+!!! export_only sert à tuer le processus avant le lancement de la simultation en provoquant une erreur, l'erreur est donc normale.
 
-## Convertir les configs .xml extraitent via arcane en .json
+
+## Convertir les configs .xml extraites via arcane en .json
 ```
 python converToJson.py
 ```
 
-## convertir les .axl en .json
+## convertir les .axl en .json via axlstar
+```
 axl2ccT4 -l json -o \[output_path\] \[path_to_axl\]/Mahyco.axl
-
-Lancer ```merge.py``` en premier puis ```export_axl.py```
+```
 
 ## Déploiement docker
 ```
@@ -29,6 +31,10 @@ docker run \
     -e NEO4J_AUTH=neo4j/password \
     neo4j:5.26
 ```
+
+## Remplir la BDD
+
+Lancer ```merge.py``` en premier puis ```export_axl.py```
 
 ## Interface web
 ```
